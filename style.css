@@ -1,0 +1,132 @@
+/* BASE RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4fdf7;
+  color: #1c1c1c;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #004d36;
+  color: white;
+}
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.nav-links a {
+  margin-left: 1.5rem;
+  color: #a6ffb2;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #ffd900;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: radial-gradient(circle, #006d4b 20%, #003c2a 100%);
+  color: white;
+}
+.hero-logo {
+  width: 130px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 12px #a6ffb2aa);
+}
+.hero-title {
+  font-size: 2.5rem;
+  color: #a6ffb2;
+  margin-bottom: 0.5rem;
+}
+.hero-slogan {
+  font-style: italic;
+  color: #ffee88;
+  font-size: 1rem;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  background-color: #ffffff;
+}
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+.about-text h2 {
+  font-size: 1.8rem;
+  color: #006d4b;
+  margin-bottom: 1rem;
+}
+.about-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.about-logo {
+  flex: 1;
+  text-align: center;
+}
+.about-logo img {
+  width: 150px;
+  filter: drop-shadow(0 0 10px #a6ffb2aa);
+}
+
+/* DOWNLOAD SECTION */
+.downloads-section {
+  padding: 3rem 2rem;
+  background-color: #e7fff0;
+  text-align: center;
+}
+.downloads-section h2 {
+  color: #006d4b;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.download-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.card {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-left: 5px solid #006d4b;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-decoration: none;
+  color: #006d4b;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.card:hover {
+  background-color: #d9ffe8;
+  color: #003c2a;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #eeeeee;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 2rem;
+}

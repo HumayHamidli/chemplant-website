@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLARION – ChemPlant Project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f5fdf7;
+      color: #1c1c1c;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 2rem;
+      background-color: #064c35;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #d6ffcf;
+      letter-spacing: 1px;
+    }
+
+    .nav-links a {
+      margin-left: 1.5rem;
+      color: #caffc9;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: #ffe356;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: radial-gradient(circle, #006d4b, #004733);
+      color: white;
+    }
+
+    .hero img {
+      max-width: 160px;
+      filter: drop-shadow(0 0 15px #eaffcd);
+      margin-bottom: 1rem;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #d6ffcf;
+    }
+
+    .hero-slogan {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #ffee88;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 3rem 2rem;
+      background: #ffffff;
+      gap: 2rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .about-text {
+      flex: 1 1 60%;
+    }
+
+    .about-text h2 {
+      color: #064c35;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-text p {
+      margin-bottom: 1rem;
+    }
+
+    .about-logo img {
+      width: 140px;
+      filter: drop-shadow(0 0 10px #cbffc4);
+    }
+
+    /* DOWNLOADS */
+    .downloads {
+      padding: 3rem 2rem;
+      background: #f0fff7;
+      text-align: center;
+    }
+
+    .downloads h2 {
+      color: #006d4b;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: #ffffff;
+      border-left: 6px solid #009d6e;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+      font-weight: bold;
+      color: #006d4b;
+      text-decoration: none;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      background: #e2ffe8;
+    }
+
+    /* TEAM CONTACTS */
+    .contacts {
+      padding: 3rem 2rem;
+      background: #fff;
+    }
+
+    .contacts h2 {
+      color: #064c35;
+      margin-bottom: 1rem;
+    }
+
+    .contacts ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .contacts li {
+      margin: 0.5rem 0;
+    }
+
+    .contacts a {
+      color: #007c5b;
+      text-decoration: none;
+    }
+
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #064c35;
+      color: #d6ffcf;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-logo {
+        margin-top: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-logo">GLARION</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img src="assets/glarion-logo.png" alt="GLARION logo" />
+    <h1 class="hero-title">Green Solvolysis</h1>
+    <p class="hero-slogan">where waste finds purpose and glows.</p>
+  </header>
+
+  <!-- ABOUT US -->
+  <section class="about">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        We are a student team from <strong>Ulm University</strong>, transforming composite waste from wind turbine blades into glowing safety tiles.
+      </p>
+      <p>
+        Using a microwave-assisted green solvolysis process, we recover valuable fibers and reinvent waste — proving that sustainability and innovation can shine together.
+      </p>
+    </div>
+    <div class="about-logo">
+      <img src="assets/glarion-logo.png" alt="Logo" />
+    </div>
+  </section>
+
+  <!-- DOWNLOADS -->
+  <section class="downloads">
+    <h2>Project Files</h2>
+    <div class="card-list">
+      <a href="assets/abstract.pdf" class="card" target="_blank">📄 Abstract</a>
+      <a href="assets/final_report.pdf" class="card" target="_blank">📘 Final Report</a>
+      <a href="assets/poster.pdf" class="card" target="_blank">🖼️ Project Poster</a>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="contacts">
+    <h2>Contact the Team</h2>
+    <ul>
+      <li>Humay Hamidli – <a href="mailto:humay.hamidli@uni-ulm.de">humay.hamidli@uni-ulm.de</a></li>
+      <li>Nigar Baghirzade – <a href="mailto:nigar.baghirzade@uni-ulm.de">nigar.baghirzade@uni-ulm.de</a></li>
+      <li>Hasan Babayev – <a href="mailto:hasan.babayev@uni-ulm.de">hasan.babayev@uni-ulm.de</a></li>
+      <li>Gozal Humbatzada – <a href="mailto:gozal.humbatzada@uni-ulm.de">gozal.humbatzada@uni-ulm.de</a></li>
+      <li>Muntaha Shaikh – <a href="mailto:muntaha.shaikh@uni-ulm.de">muntaha.shaikh@uni-ulm.de</a></li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 GLARION – ChemPlant Team, Ulm University
+  </footer>
+</body>
+</html>
